@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;;
+}
+
+.navbar{
+    border: 3px solid red;
+}
+
+.head{
+    /* border: 2px solid blue; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.head .head_intro{
+    /* border: 2px solid green; */
+    margin-left: 100px;
+}
+.head .head_intro img{
+    width: 121px;
+    height: 22px;
+}
+.head .head_menu{
+    /* border: 2px solid black; */
+    font-size: 12px;
+    list-style: none;
+    display:flex;
+    margin-right: 100px;
+}
+.head .head_menu a{
+    text-decoration: none;
+    color: black;
+    padding: 0 12px;
+}
+
+.head .head_menu i{
+    margin-left: 5px;
+}
+
+.logo{
+    /* border: 2px solid blueviolet; */
+    display:flex;
+    justify-content: center;
+}
+
+.logo .logo_img{
+    /* border: 2px solid black; */
+    width: 103px;
+    height: 79px;
+
+}
+
+.logo .logo_img img{
+    /* border: solid 2px yellow; */
+    width: 103px;
+    height: 79px;
+}
+
+.menu{
+    /* border: 2px solid greenyellow; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.menu .menu_bar{
+    /* border: solid 2px hotpink; */
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+.menu .menu_bar div, .menu_search input, .menu_search span, .menu_icons div{
+    /* border: 1px solid brown; */
+}
+.menu_bar span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu .menu_bar div{
+    padding: 10px 30px;
+}
+
+.menu .menu_search{
+    /* border: 2px solid blue; */
+    padding: 10px 0;
+}
+
+.menu_search input{
+    border-radius: 18px;
+    width: 242px;
+    height: 36px;
+    border: 2px solid #f7f7f6;
+    background-color: #f7f7f7;
+    cursor: text;
+    padding-left: 10px;
+    
+}
+
+.menu_search span{
+    position: relative;
+}
+.menu_search span i{
+    font-size: 16px;
+    position: relative;
+    right: 35px;
+}
+
+.menu .menu_icons{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    margin-right: 55px;
+}
+
+.menu .menu_icons i{
+    padding: 10px 15px;
+    font-size: 23px;
+    
+}
