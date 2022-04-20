@@ -211,3 +211,39 @@
     padding-left:0;
     display:flex;
 }
+.right_sns_menu img{
+    width: 30px;
+    height: 30px;
+}
+
+.first_footer .left div{
+    border: 1px solid orange;
+}
+
+.first_footer .left .one, .first_footer .left .two, .first_footer .left .three, .first_footer .left .four{
+    display:flex;
+}
+
+
+
+/*****side banner *****/
+.side_banner{
+  
+}
+.side_banner img{
+    position: sticky;
+ 
+    width: 80px;
+    height: 120px;
+}
+
+.side_banner .info{
+    position: sticky;
+  
+    width: 78px;
+    height: 29px;
+    font-size: 12px;
+    border: 1px solid #DDDDDD;
+    padding: 5px 0 0 0;
+    text-align: center;
+}
