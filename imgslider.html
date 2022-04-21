@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            border: 3px solid red;
+            background-color: pink;
+            height: 200px;
+        }
+
+        nav h1 {
+            margin-top:0
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>이건 연습용 네브바야 </h1>
+    </nav>
+<div class="container">
+    <div class="album">
+        <div class="images">
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/36a5c617-0af0-449b-a478-a9026e536d47"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/2fc6b874-164b-41bc-9d09-e3fcf9e4c804"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/d2dc157d-46fe-4296-8d08-75394ecaaeb0"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/46b0eed9-0c77-4731-829b-f6f32727a2c3"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/4c584bd7-d008-42fa-a12b-b5b85e1b9d3b"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/28789818-0c51-4b26-a595-6dc0be448602"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/2199ec36-b996-4bb5-9dc9-c2a18f4092e0"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/2e1a1939-48e2-40d7-91b5-1ed0e1aabbd9"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/4cf7b252-0ebe-411f-a9eb-7b2bf93978f2"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/72a90f92-861a-47fd-bd79-830ff2fd7756"></div>
+            <div><img src="https://img-cf.kurly.com/banner/main/pc/img/ab2389bf-5bef-4886-b1f8-8696ddd309b3"></div>
+        </div>
+    </div>
+    <div class="btn">
+    <button class="prev"><</button>
+    <button class="next">></button>
+    </div>
+</div>
+
+<style>
+
+    .container{
+        /* border: 4px solid black; */
+        width: 100vw;
+    }
+    .album{
+        /* border: 3px solid red; */
+        width: 100vw;
+        height: 370px;
+        overflow:hidden;
+    }
+
+    .images{
+        /* border: 2px solid blue; */
+        position: relative;
+        display:flex;
+        height: 370px;
+        position: transform 0.5s;
+    }
+
+    img{
+        width: 100vw;
+        height: 370px;
+    }
+
+    button{
+        cursor: pointer;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 0;
+        color:white;
+        background: pink;
+        opacity: 0.4;
+      
+    }
+
+    button:hover{
+        color: black;
+        border: 1px solid gray;
+    }
+    .btn .prev{
+        opacity: 1;
+        position: absolute;
+        left: 18vw;
+        top: 38vh
+    }
+
+    .btn .next{
+        position: absolute;
+        right: 18vw;
+        top: 38vh;
+
+    }
+
+
+    </style>
+
+<script>
+    let curPos = 0;
+    let positionValue = 0;
+    const image_width = 100;
+
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const images = document.querySelector('.images');
+
+    function next(){
+        if(curPos < 10){
+            positionValue -= image_width;
+            images.style.transform = `translateX(${positionValue}vw )`;
+        }
+        curPos++
+        if(curPos == 11){
+            curPos = 0
+            positionValue = 0;
+            images.style.transform = `translateX(${positionValue}vw )`;
+           
+        }
+       
+    }
+
+    function prev(){
+        if(curPos > 0){
+            positionValue += image_width;
+            images.style.transform = `translateX(${positionValue}vw )`;
+           
+        }
+        curPos--
+        if(curPos == -1){
+            curPos = 10
+            positionValue = -1000;
+            images.style.transform = `translateX(${positionValue}vw )`
+        }
+    }
+
+    function init(){
+        nextBtn.addEventListener('click',next)
+        prevBtn.addEventListener('click',prev)
+    }
+
+    init()
+
+
+    
+    
+</script>
+
+</body>
+</html>
