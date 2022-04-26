@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마켓컬리 :: 내일의 장보기, 마켓컬리 </title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
@@ -31,7 +32,12 @@
 
         <div class="menu">
             <div class="menu_bar">
-                <div><i class="fa-solid fa-bars"><span  id="contain_i">전체 카테고리</span></i></div>
+                <div class="dropdown">
+                    <i class="fa-solid fa-bars"><span  id="contain_i">전체 카테고리</span></i>
+                    
+                </div>
+
+
                 <div>신상품</div>
                 <div>베스트</div>
                 <div>알뜰쇼핑</div>
@@ -49,34 +55,73 @@
         </div>
 </nav>
 
-<div style="height: 2000px; background-color: skyblue;"></div>
+
+<!--img slider-->
+<body>
+    <div class="container">
+        <div class="album">
+            <div class="images">
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/36a5c617-0af0-449b-a478-a9026e536d47"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/2fc6b874-164b-41bc-9d09-e3fcf9e4c804"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/d2dc157d-46fe-4296-8d08-75394ecaaeb0"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/46b0eed9-0c77-4731-829b-f6f32727a2c3"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/4c584bd7-d008-42fa-a12b-b5b85e1b9d3b"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/28789818-0c51-4b26-a595-6dc0be448602"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/2199ec36-b996-4bb5-9dc9-c2a18f4092e0"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/2e1a1939-48e2-40d7-91b5-1ed0e1aabbd9"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/4cf7b252-0ebe-411f-a9eb-7b2bf93978f2"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/72a90f92-861a-47fd-bd79-830ff2fd7756"></div>
+                <div class="photo"><img src="https://img-cf.kurly.com/banner/main/pc/img/ab2389bf-5bef-4886-b1f8-8696ddd309b3"></div>
+            </div>
+        </div>
+        
+        <button class="btn prev"><</button>
+        <button class="btn next">></button>
+    
+    </div>
+<div style="height: 1000px; background-color: skyblue;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--footer-->
 <footer class="footer">
     <div class="footer_intro">
         <div class="first_footer">
             <div class="left">
-                <h2 style="font-size: 20px; font-weight: 700px">고객행복센터</h2>
+                <h2>고객행복센터</h2>
 
                 <div class="one">
-                    <div style="font-size:28px; font-weight: bold">1644-1107</div>
-                    <div>365고객센터<br>오전7시-오후7시</div>
+                    <div class="title" style="font-weight: bold; font-size: 18px;">1644-1107</div>
+                    <div><span  style="display: inline-block;font-weight: bold; padding-bottom: 3px; color:black;">365고객센터</span><br>오전7시-오후7시</div>
                 </div>
 
                 <div class="two">
-                    <div>카카오톡 문의</div>
-                    <div>365고객센터<br>오전7시-오후7시</div>
+                    <div class="title">카카오톡 문의</div>
+                    <div><span style="display: inline-block;font-weight: bold; padding-bottom: 3px; color:black;">365고객센터</span><br>오전7시-오후7시</div>
                 </div>
 
                 <div class="three">
-                    <div>1:1 문의</div>
-                    <div>24시간 접수 가능<br>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</div>
+                    <div class="title">1:1 문의</div>
+                    <div><span style="display: inline-block;font-weight: bold; padding-bottom: 3px; color:black;">24시간 접수 가능</span><br>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</div>
                 </div>
 
                 <div class="four">
-                    <div>대량주문 문의</div>
-                    <div>비회원의 경우 메일로 문의 바랍니다.</div>
+                    <div class="title">대량주문 문의</div>
+                    <div style="padding-top: 10px;">비회원의 경우 메일로 문의 바랍니다.</div>
+
+                   </div>
+                
                 </div>
-            </div>
 
             <div class="right">
                 <ul class="right_menu">
@@ -150,6 +195,87 @@
     <div class="info">레시피</div>
     <div class="info">베스트 후기</div>
 </div>
+
+
+
+<!--top button-->
+<div class="top_btn">
+    <img src="탑버튼.png" alt="탑버튼" style="width: 58px; height:58px;">
+</div>
+
+
+
+<script>
+    let curPos = 0;
+    let positionValue = 0;
+    const image_width = 100;
+
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const images = document.querySelector('.images');
+    const btn = document.querySelectorAll('button');
+
+    function next(){
+        if(curPos < 10){   //10
+            positionValue -= image_width;
+            images.style.transform = `translateX(${positionValue}vw )`;
+        }
+        curPos++
+        if(curPos == 11){  //11
+            curPos = 0
+            positionValue = 0;
+            images.style.transform = `translateX(${positionValue}vw )`;
+        }
+    }
+
+    function prev(){
+        if(curPos > 0){
+            positionValue += image_width;
+            images.style.transform = `translateX(${positionValue}vw )`;
+        }
+        curPos--
+        if(curPos == -1){
+            curPos = 10  //10
+            positionValue = -1000;  //1000
+            images.style.transform = `translateX(${positionValue}vw )`
+        }
+    }
+
+nextBtn.addEventListener('click',next);
+prevBtn.addEventListener('click',prev);
+
+
+//auto slider
+let album = document.querySelector('.album');
+let photo = document.querySelectorAll('.photo');
+let currentSlide = 0
+setInterval(function(){
+    let from = -(100 * currentSlide);
+    let to = from - 100;
+    images.animate({
+        marginLeft: [from +'vw', to + 'vw']
+    },{
+        duration: 500,
+        easing: 'ease',
+        iterations:1,
+        fill: 'both'
+    });
+    currentSlide++;
+    if(currentSlide === (photo.length -1)){
+        currentSlide = 0;
+    }
+},3000)
+    
+// top button
+
+function scrollUp() {
+    let target = document.querySelector('.top_btn');  
+    target.addEventListener('click', function(){window.scrollTo({top:0, left:0, behavior:'smooth'})}  
+    )
+}
+scrollUp();
+
+</script>
 
 
 </body>

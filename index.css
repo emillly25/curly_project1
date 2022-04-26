@@ -6,7 +6,7 @@
 }
 
 .navbar{
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .head{
@@ -175,7 +175,7 @@
 
 
 .first_footer{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100vw;
     height: 293px;
     background-color: #ffffff;
@@ -185,39 +185,89 @@
 
 .first_footer .left{
     width: 50vw;
-    border: 2px solid red;
-    background-color: pink;
+    /* border: 2px solid red; */
+}
+
+
+.left h2{
+    /* border: 1px solid red; */
+    margin-right: 10px;
+    padding-top: 8px;
+    padding-left: 5px;
+    width: 534px;
+    float:right;
+
+}
+
+
+.first_footer .left div{
+margin: 6px 10px;
+font-size: 14px;
+}
+
+.left .one, .left .two, .left .three, .left .four{
+    display:flex;
+    justify-content: flex-start;
+    width: 534px;
+    float:right;
+    color: #999999;
+}
+
+.left .title{
+    width: 140px;
+    height: 40px;
+    padding: 10px 8px;
+    text-align: center;
+    border: 1px solid #E3E3E3;
+    color: black;
 }
 
 .first_footer .right{
     width: 50vw;
-    border: 2px solid blue;
-    background-color: skyblue;
+    /* border: 2px solid blue; */
 }
 
 .right_menu{
     display:flex;
     list-style: none;
-    padding-left: 0;;
+    padding-left: 0;
+    /* border: 3px solid red; */
+    width: 550px;
+    font-size: 14px ;
+    margin-top: 10px;
 }
 
 .right_menu li{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 6px 8px;
 }
 
+.right_info{
+    margin-top: 30px;
+    width: 477px;
+    /* border: 2px solid yellow; */
+    font-size: 12px;
+    padding: 8px 12px;
+
+}
 .right_sns_menu{
+    width: 477px;
     list-style: none;
     padding-left:0;
     display:flex;
+    /* border: 2px solid black; */
+    padding: 8px 12px;
+    margin-top: 20px;
 }
 .right_sns_menu img{
     width: 30px;
     height: 30px;
+    margin-right: 8px;
 }
 
 .first_footer .left div{
-    border: 1px solid orange;
+  /* border: 1px solid red; */
+  margin-left: 0;
 }
 
 .first_footer .left .one, .first_footer .left .two, .first_footer .left .three, .first_footer .left .four{
@@ -228,22 +278,38 @@
 
 /*****side banner *****/
 .side_banner{
-  
+    position: fixed;
+    top: 30vh;
+    right: 20px;
+    z-index: 1;
 }
 .side_banner img{
-    position: sticky;
- 
     width: 80px;
     height: 120px;
 }
 
 .side_banner .info{
-    position: sticky;
-  
+
     width: 78px;
     height: 29px;
     font-size: 12px;
     border: 1px solid #DDDDDD;
     padding: 5px 0 0 0;
     text-align: center;
+    background-color:#fff ;
+    color: black;
 }
+
+
+
+/*****top button *****/
+.top_btn{
+    position: fixed;
+   right:20px;
+   bottom: 20px;
+}
+
+.top_btn:hover{
+    cursor: pointer;
+}
+
