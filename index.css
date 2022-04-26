@@ -24,6 +24,10 @@
     width: 121px;
     height: 22px;
 }
+
+.head_intro img:hover{
+    cursor: pointer;
+}
 .head .head_menu{
     /* border: 2px solid black; */
     font-size: 12px;
@@ -53,6 +57,10 @@
     height: 79px;
 
 }
+.logo_img:hover{
+    cursor: pointer;
+}
+
 
 .logo .logo_img img{
     /* border: solid 2px yellow; */
@@ -76,9 +84,20 @@
     margin-left: 50px;
 }
 
-.menu .menu_bar div, .menu_search input, .menu_search span, .menu_icons div{
-    /* border: 1px solid brown; */
+.menu .menu_bar div:hover, .menu_icons div:hover{
+    color: #5f0080;
+    cursor: pointer;
 }
+
+.menu_bar div{
+    font-weight: 600;
+}
+
+
+
+
+
+
 .menu_bar span {
     display: inline-block;
     margin-left: 10px;
@@ -91,6 +110,10 @@
 .menu .menu_search{
     /* border: 2px solid blue; */
     padding: 10px 0;
+}
+
+.menu_search:hover{
+    cursor: pointer;
 }
 
 .menu_search input{
@@ -123,8 +146,11 @@
 .menu .menu_icons i{
     padding: 10px 15px;
     font-size: 23px;
-    
 }
+.menu_icons i:hover{
+    color: #5f0080;
+}
+
 
 
 /****** footer******/
@@ -242,6 +268,10 @@ font-size: 14px;
     padding: 6px 8px;
 }
 
+.right_menu li:hover{
+    cursor: pointer;
+}
+
 .right_info{
     margin-top: 30px;
     width: 477px;
@@ -263,6 +293,10 @@ font-size: 14px;
     width: 30px;
     height: 30px;
     margin-right: 8px;
+}
+
+.right_sns_menu img:hover{
+    cursor: pointer;
 }
 
 .first_footer .left div{
@@ -300,6 +334,9 @@ font-size: 14px;
     color: black;
 }
 
+.side_banner:hover{
+    cursor: pointer;
+}
 
 
 /*****top button *****/
